@@ -65,7 +65,7 @@ TTDK is a modern online platform that allows vehicle owners to conveniently sche
 | Time Period | Features | Team Members & Roles |
 |------------|---------|--------------------|
 | 01-01-2023 | Project kickoff, requirements gathering | **[ChauNNT](https://github.com/chaunnt)** - Product Owner |
-| 01-01-2025 | Release version 5.0 | **[ChauNNT](https://github.com/chaunnt)** - Product Owner |
+| 01-01-2025 | Release version 5.0 | **[ChauNNT](https://github.com/chaunnt)** - Product Owner <br> **[TruyenNV](https://github.com/NguyenVanTruyen01)** - Backend Developer |
 
 ---
 > 🚀 **TTDK** simplifies vehicle inspection and improves efficiency for both users and inspection centers.
