@@ -3,11 +3,11 @@ const path = require('path');
 
 // Định nghĩa các hằng số
 const PROJECTS_DIR = 'projects';
-const LEADERBOARD_FILE = 'leaderboard.md';
+const LEADERBOARD_FILE = 'HALLOFFAME.md';
 const README_FILENAME = 'README.md';
 
 /**
- * Hàm chính để tạo nội dung cho leaderboard.md.
+ * Hàm chính để tạo nội dung cho HALLOFFAME.md.
  */
 function generateLeaderboard() {
     console.log(`Bắt đầu tạo file ${LEADERBOARD_FILE}...`);
@@ -27,14 +27,14 @@ function generateLeaderboard() {
 
         if (projectFolders.length === 0) {
             console.log(`Không tìm thấy thư mục project nào trong thư mục "${PROJECTS_DIR}".`);
-            // Có thể tạo một leaderboard file rỗng với tiêu đề
+            // Có thể tạo một HALLOFFAME file rỗng với tiêu đề
             const initialContent = `# Project Leaderboard\n\nKhông có project nào được tìm thấy.`;
             fs.writeFileSync(path.join(LEADERBOARD_FILE), initialContent);
             console.log(`Đã tạo ${LEADERBOARD_FILE} nhưng không có liên kết project.`);
             return;
         }
 
-        // 3. Xây dựng nội dung Markdown cho leaderboard
+        // 3. Xây dựng nội dung Markdown cho HALLOFFAME
         let content = `# Project Leaderboard\n\n`;
         content += `Đây là danh sách các dự án có sẵn. Bấm vào tên dự án để xem chi tiết:\n\n`;
         
@@ -64,9 +64,9 @@ function generateLeaderboard() {
             }
         });
 
-        // 4. Ghi nội dung đã tạo vào file leaderboard.md
-        const leaderboardFilePath = path.join(LEADERBOARD_FILE);
-        fs.writeFileSync(leaderboardFilePath, content);
+        // 4. Ghi nội dung đã tạo vào file HALLOFFAME.md
+        const HALLOFFAMEFilePath = path.join(LEADERBOARD_FILE);
+        fs.writeFileSync(HALLOFFAMEFilePath, content);
 
         console.log(`\n✅ Đã tạo/cập nhật thành công file: **${LEADERBOARD_FILE}**`);
         console.log(`   Tìm thấy ${projectFolders.length} thư mục project.`);
